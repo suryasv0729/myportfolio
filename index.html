@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" type="image/x-icon" href="./img/uifaces-cartoon-image (1).jpg">
+    
     <title>Surya -frontend developer</title>
   </head>
   <body>
@@ -35,14 +39,16 @@
           url="https://prod.spline.design/7uWlxxB3rcuB4Y4F/scene.splinecode"
         ></spline-viewer> -->
         <!-- ///////////////////////////////// -->
-       <script 
+       <!-- <script 
           type="module"
           src="https://unpkg.com/@splinetool/viewer@1.0.62/build/spline-viewer.js"
           async
         ></script>
         <spline-viewer
           url="https://prod.spline.design/7uWlxxB3rcuB4Y4F/scene.splinecode"
-        ></spline-viewer>
+        ></spline-viewer> -->
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.78/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/Ui52433fH-p3hLZJ/scene.splinecode"></spline-viewer>
       </div>
       <div class="hero-content">
         <h2 class="intro">Hi, my name is</h2>
@@ -91,7 +97,7 @@
         </ul>
       </div>
       <div class="img">
-        <img class="abt-img" src="./img/uifaces-cartoon-image.jpg" alt="" />
+        <img class="abt-img" src="./img/suryaprofile.JPG" alt="" />
       </div>
     </div>
     <div class="section-3" id="projects">
@@ -99,6 +105,7 @@
       <div class="projects">
         <div class="img-p">
           <img class="pro-img" src="./img/cookmateimg.png" alt="" />
+          <div class="overlay"></div>
         </div>
         <div>
           <button class="pro-link"><a href="https://urcookmate.netlify.app/" target="_blank">&#8599;</a></button>
@@ -119,8 +126,10 @@
             working on making it responsive to all screen sizes.
           </p>
         </div>
-        <div><img class="pro-img" src="./img/omniimg.png" alt="" /></div>
-        <div><img class="pro-img" src="./img/portfolioimg.png" alt="" /></div>
+        <div class="img-p"><img class="pro-img" src="./img/omniimg.png" alt="" />
+          <div class="overlay"></div></div>
+        <div class="img-p"><img class="pro-img" src="./img/portfolioimg.png" alt="" />
+          <div class="overlay"></div></div>
         <div>
           <button class="pro-link"><a href="https://suryaonline.netlify.app/" target="_blank">&#8599;</a></button>
           <p class="pro-para">
@@ -147,7 +156,9 @@
         </div>
       </div>
       <div class="made"><p>made with ❤️ by <a class="m-link" href="https://www.linkedin.com/in/suryasv/" target="_blank">surya</a></p></div>
+      
     </footer>
-    <script src="./script.js"></script>
+    <div class="another"><a class="an-link" href="./another.html">another version of my portfolio &rightarrow;</a></div>
+    <script defer src="./script.js"></script>
   </body>
 </html>
