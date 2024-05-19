@@ -20,55 +20,48 @@
     <spline-viewer
       url="https://prod.spline.design/7uWlxxB3rcuB4Y4F/scene.splinecode"
     ></spline-viewer> -->
-    <header class="navbar">
-      <nav>
-        <ul class="nav-list">
-          <li class="lis"><span class="num">01.</span><a class="nav-link" href="#about">about</a></li>
-          <li class="lis"><span class="num">02.</span><a class="nav-link"href="#projects">projects</a</li>
-          <li class="lis"><span class="num">03.</span><a class="nav-link"href="#contact">contact</a></li>
+    <header class="header">
+      <div class="logo">
+    </div>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="lis"><a class="nav-link" href="#about">About</a></li>
+          <li class="lis"><a class="nav-link"href="#projects">My Work</a</li>
+          <li class="lis"><a class="nav-link"href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <div class="main">
+    <main>
+    <section class="section-hero">
+      <div class="hero">
       <div class="spline-image">
-        <!-- <script
-          type="module"
-          src="https://unpkg.com/@splinetool/viewer@1.0.62/build/spline-viewer.js"
-        ></script>
-        <spline-viewer
-          url="https://prod.spline.design/7uWlxxB3rcuB4Y4F/scene.splinecode"
-        ></spline-viewer> -->
-        <!-- ///////////////////////////////// -->
-       <!-- <script 
-          type="module"
-          src="https://unpkg.com/@splinetool/viewer@1.0.62/build/spline-viewer.js"
-          async
-        ></script>
-        <spline-viewer
-          url="https://prod.spline.design/7uWlxxB3rcuB4Y4F/scene.splinecode"
-        ></spline-viewer> -->
+        
         <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.78/build/spline-viewer.js"></script>
-        <spline-viewer url="https://prod.spline.design/Ui52433fH-p3hLZJ/scene.splinecode"></spline-viewer>
+        <spline-viewer  url="https://prod.spline.design/Ui52433fH-p3hLZJ/scene.splinecode"></spline-viewer>
+   
       </div>
       <div class="hero-content">
-        <h2 class="intro">Hi, my name is</h2>
-        <h1>SURYA.</h1>
-        <p class="things">I build things for the web.</p>
-        <p class="cont">
-          I'm a frontend developer who loves creating amazing digital
+        <h3 class="intro-text">Hi, my name is</h3>
+        <h1 class="heading-primary">SURYA.</h1>
+        <h2 class="what-do-text">I build things for the web.</h2>
+        <p class="intro-description">
+          I'm a frontend enthusiast who loves creating amazing digital
           experiences. I specialize in building interactive products that users
           love to engage with. Let's make something awesome together!.
         </p>
         <p>
-          <button>
-            <a href="mailto:suryasv0-729@gmail.com">contact me</a>
-          </button>
+          
+            <a class="btn"  href="mailto:suryasv0-729@gmail.com">contact me</a>
+      
         </p>
       </div>
     </div>
-    <div class="section-2" id="about">
-      <div class="about">
-        <h2 class="abt"><span class="num">01.</span>About Me</h2>
+    </section>
+     <section class="section-about " >
+
+      <div class="about grid grid--2-cols container" id="about">
+        <div>
+        <h2 class="abt">About Me</h2>
         <p class="about-cont">
           Hello! My name is surya. I'm someone who sees the world through
           visuals.Since childhood, I've always been a creative soul, preferring
@@ -88,27 +81,30 @@
           Here are a few technologies I’ve been working with recently:
         </p>
         <ul class="skill-list">
-          <li class="list">JavaScript (ES6+)</li>
-          <li class="list">React</li>
-          <li class="list">HTML</li>
-          <li class="list">Git</li>
-          <li class="list">CSS</li>
-          <li class="list">3D designing</li>
+          <li class="list"><span><img class="skill-img" src="./img/java-script.png" alt=""></span>JavaScript (ES6+)</li>
+          <li class="list"><span><img class="skill-img" src="./img/atomic-symbol.png" alt=""></span>React</li>
+          <li class="list"><span><img class="skill-img" src="./img/html-5.png" alt=""></span>HTML</li>
+          <li class="list"><span><img class="skill-img" src="./img/git.png" alt=""></span>Git</li>
+          <li class="list"><span><img class="skill-img" src="./img/css-3.png" alt=""></span>CSS</li>
+          <li class="list"><span><img class="skill-img" src="./img/wind.png" alt=""></span>Tailwind</li>
         </ul>
       </div>
+      
       <div class="img">
         <img class="abt-img" src="./img/suryaprofile.JPG" alt="" />
       </div>
     </div>
-    <div class="section-3" id="projects">
-      <h2 class="pro-head"><span class="num">02.</span>Projects</h2>
-      <div class="projects">
+    </section>
+    
+    <section class="section-project container" id="projects">
+      <h2 class="pro-head">My Work</h2>
+      <div class="projects container grid grid--2-pro">
         <div class="img-p">
           <img class="pro-img" src="./img/cookmateimg.png" alt="" />
-          
+          <div class="overlay"></div>
         </div>
         <div>
-          <button class="pro-link"><a href="https://urcookmate.netlify.app/" target="_blank">&#8599;</a></button>
+          <a  class="pro-link" href="https://urcookmate.netlify.app/" target="_blank">&#8599;</a>
           <p class="pro-para">
             This project is a web application that allows users to search for
             recipes using either the recipe name or ingredient name. The
@@ -118,7 +114,7 @@
           </p>
         </div>
         <div>
-          <button class="pro-link"><a href="https://testomninow.netlify.app/" target="_blank">&#8599;</a></button>
+          <a class="pro-link" href="https://testomninow.netlify.app/" target="_blank">&#8599;</a>
           <p class="pro-para">
             Developed a landing page for a meal delivery service, following
             modern design principles. Integrated a 3D hamburger model using
@@ -127,11 +123,11 @@
           </p>
         </div>
         <div class="img-p"><img class="pro-img" src="./img/omniimg.png" alt="" />
-         </div>
+          <div class="overlay"></div></div>
         <div class="img-p"><img class="pro-img" src="./img/portfolioimg.png" alt="" />
-          </div>
+          <div class="overlay"></div></div>
         <div>
-          <button class="pro-link"><a href="https://suryaonline.netlify.app/" target="_blank">&#8599;</a></button>
+          <a class="pro-link" href="https://suryaonline.netlify.app/" target="_blank">&#8599;</a>
           <p class="pro-para">
             Developed a portfolio project , a showcase of my creative endeavors
             in web development. this project is made with vanilla JavaScript,
@@ -140,25 +136,17 @@
           </p>
         </div>
       </div>
-    </div>
+    </section>
+    
     <footer id="contact">
-      <div class="contact-icon">
-        <div>
-          <a class="f-link" href="https://www.linkedin.com/in/suryasv/" target="_blank"
-            >linkedin</a
-          >
-        </div>
-        <div>
-          <a class="f-link" href="https://github.com/suryasv0729" target="_blank">github</a>
-        </div>
-        <div>
-          <a class="f-link" href="mailto:suryasv0-729@gmail.com">suryasv0729@gmail.com</a>
-        </div>
-      </div>
-      <div class="made"><p>made with ❤️ by <a class="m-link" href="https://www.linkedin.com/in/suryasv/" target="_blank">surya</a></p></div>
-      
+      <div class="footer-div container grid ">
+
+      <div class="made"><p>coded with ❤️ by <a class="m-link" href="https://www.linkedin.com/in/suryasv/" target="_blank">surya</a></p></div>
+    
+    </div>
     </footer>
-    <div class="another"><a class="an-link" href="./another.html">another version of my portfolio &rightarrow;</a></div>
+  
     <script defer src="./script.js"></script>
+  </main>
   </body>
 </html>
